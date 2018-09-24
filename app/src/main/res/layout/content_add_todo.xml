@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddTodo"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_add_todo">
+
+    <EditText
+        android:id="@+id/title"
+        android:hint="title"
+        android:maxLines="1"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/content"
+        android:hint="content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:lines="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/datetime"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="date time"
+        android:maxLines="1"
+        />
+    <Button
+        android:id="@+id/insert"
+        android:layout_marginTop="8dp"
+        android:text="insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/update"
+        android:layout_marginTop="8dp"
+        android:text="update"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/delete"
+        android:layout_marginTop="8dp"
+        android:text="delete"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
